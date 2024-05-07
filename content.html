@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Star-Box</title>
+    <style>
+       
+      h1{
+        text-align: center;
+        color: red;
+      }
+      
+      h2{
+        text-align: center;
+        border: 3px solid white;
+        border-radius: 4px;
+       max-width: 49%;
+       margin: 0 auto;
+      }
+
+      img{
+        display: block;
+        margin: 0 auto;
+        
+        width:300px;
+        padding-top: 10px;
+      }
+      p{
+        font-size:15px ;
+        text-align: center;
+      
+      }
+      button{
+        border: 1px solid burlywood;
+        text-align: center;
+        box-shadow: 2px 2px 2px white;
+        border-radius: 0 auto ;
+        margin: 10px;
+        
+      }
+      
+      button:hover{
+        color: aqua;
+      }
+      .coder{
+        font-weight: bold;
+        padding-bottom: 20px;
+      text-align: center;
+      }
+      .container{
+        max-width: 50%;
+        margin:0 auto;
+        background-color: black;
+        color: white ;
+        }
+      .learn-more{
+        margin: 10px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+  <h1>All Star-Box</h1>
+  <h2>KFC Burger Lovers</h2>  
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/119/217/original/images.jpg?1710520449ddy.jpg""
+  alt="all star box" />
+  <p>For those who want to try KFC items in one go,the All-Start Box is perfect.
+    It is specially made for KFC <em>lovers!</em>
+    The All-Star Box is always a choice during any time of the day.It includes chicken pieces,fries,a roll and a regular or no sugar coke soda.
+  </p>
+  <a id="learm-more" href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/119/217/original/images.jpg?1710520449" target="_blank">
+    learn more about All-Star Box</a>
+   <br/> 
+   <button>Order Here!</button>
+    <p class="coder">Coded by Singo Cynthia</p>
+  </div>
+  <script>
+    function order() {
+  let Name = prompt("What is your name?");
+  let email = prompt("Enter your email");
+  
+    alert("Hi " + Name + ", check your email to review our All-Star Box menu");
+  }
+
+
+let orderButton = document.querySelector("button");
+orderButton.addEventListener("click", order);
+  </script>
+</body>
+</html>
